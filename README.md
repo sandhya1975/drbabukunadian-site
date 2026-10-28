@@ -9,6 +9,11 @@ Live: https://sandhya1975.github.io/drbabukunadian-site
 | `babu-portrait.jpg` | Hero photo |
 | `babu-lhch.jpg` | About-section photo |
 | `reviews.json` | Patient reviews shown on the site |
+| `site.css` | Shared style for the condition and privacy pages |
+| `chest-pain.html`, `palpitations.html`, `atrial-fibrillation.html`, `angina.html`, `heart-valve-disease.html`, `coronary-ct.html`, `high-blood-pressure.html`, `second-opinion.html` | Patient guide pages (help Google find the site) |
+| `privacy.html` | Privacy policy |
+| `sitemap.xml`, `robots.txt` | Tell Google which pages exist |
+| `CNAME` | Connects the domain drbabukunadian.co.uk |
 
 ## How to add a patient review (Michele)
 Patient reviews sent through the website arrive by email. To publish one:

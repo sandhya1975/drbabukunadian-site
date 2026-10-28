@@ -8,11 +8,14 @@
 <meta name="description" content="Dr Babu Kunadian — Consultant General & Interventional Cardiologist. Private consultations at Nuffield Health Grosvenor Hospital, Chester. Chest pain, palpitations, angina, heart rhythm and valve disease. All major insurers accepted. Call 01244 680 444.">
 <meta name="keywords" content="private cardiologist Chester, cardiologist Liverpool, cardiologist Wirral, Merseyside cardiologist, chest pain specialist, palpitations, angina, atrial fibrillation, coronary CT, echocardiogram, Nuffield Health Grosvenor Hospital">
 <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://drbabukunadian.co.uk/">
 <meta name="theme-color" content="#0a1628">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Dr Babu Kunadian | Private Cardiologist, Chester & Liverpool">
 <meta property="og:description" content="Consultant General & Interventional Cardiologist. Private consultations at Nuffield Health Grosvenor Hospital, Chester. All major insurers accepted.">
 <meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://drbabukunadian.co.uk/">
+<meta property="og:image" content="https://drbabukunadian.co.uk/babu-lhch.jpg">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230a1628'/%3E%3Ctext x='50' y='66' font-size='46' text-anchor='middle' fill='%23c8a96e' font-family='Georgia,serif'%3EBK%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
@@ -20,6 +23,8 @@
   "@context": "https://schema.org",
   "@type": "Physician",
   "name": "Dr Babu Kunadian",
+  "url": "https://drbabukunadian.co.uk/",
+  "image": "https://drbabukunadian.co.uk/babu-portrait.jpg",
   "description": "Consultant General and Interventional Cardiologist serving Chester, Liverpool, Wirral and Merseyside.",
   "medicalSpecialty": "Cardiovascular",
   "sameAs": ["https://www.nuffieldhealth.com/consultants/dr-babu-kunadian"],
@@ -1252,6 +1257,17 @@
 
   [hidden] { display: none !important; }
 
+  /* Patient guide links */
+  .guides { margin-top: 3rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; }
+  .guides h3 { grid-column: 1 / -1; font-size: 1.6rem; color: var(--navy); margin-bottom: 0.4rem; }
+  .guide-link { display: flex; align-items: center; gap: 0.7rem; background: var(--white); padding: 1rem 1.2rem; border-radius: 4px;
+    text-decoration: none; color: var(--navy); font-weight: 500; font-size: 0.92rem; border: 1px solid transparent; transition: all 0.3s; }
+  .guide-link span { font-size: 1.3rem; }
+  .guide-link em { margin-left: auto; color: var(--accent); font-style: normal; transition: transform 0.3s; }
+  .guide-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.06); }
+  .guide-link:hover em { transform: translateX(4px); }
+
+
   /* About photo */
   .about-photo { margin: 0 0 1.5rem; }
   .about-photo img { width: 100%; height: auto; display: block; border-radius: 4px; box-shadow: 0 20px 50px rgba(10,22,40,0.15); }
@@ -1321,6 +1337,7 @@
     .hero-photo-frame::before { top: -10px; right: -10px; }
     .hero-credentials { display: none; }
     .reviews-grid { grid-template-columns: 1fr; }
+    .guides { grid-template-columns: 1fr 1fr; }
     .enquire-section { grid-template-columns: 1fr; gap: 2rem; }
     .site-form { padding: 1.4rem; }
     .site-form .form-row { grid-template-columns: 1fr; }
@@ -1657,6 +1674,18 @@
         <li>Medication review & optimisation</li>
       </ul>
     </div>
+  </div>
+
+  <div class="guides">
+    <h3>Patient guides</h3>
+    <a class="guide-link" href="chest-pain.html"><span>🫀</span>Chest Pain<em>→</em></a>
+    <a class="guide-link" href="palpitations.html"><span>💓</span>Palpitations<em>→</em></a>
+    <a class="guide-link" href="atrial-fibrillation.html"><span>📈</span>Atrial Fibrillation<em>→</em></a>
+    <a class="guide-link" href="angina.html"><span>⚡</span>Angina<em>→</em></a>
+    <a class="guide-link" href="heart-valve-disease.html"><span>🩺</span>Heart Valve Disease<em>→</em></a>
+    <a class="guide-link" href="coronary-ct.html"><span>🖥️</span>Coronary CT<em>→</em></a>
+    <a class="guide-link" href="high-blood-pressure.html"><span>💉</span>High Blood Pressure<em>→</em></a>
+    <a class="guide-link" href="second-opinion.html"><span>🔍</span>Second Opinion<em>→</em></a>
   </div>
 </section>
 
@@ -2118,7 +2147,7 @@
         </select>
       </label>
       <label>Message (optional)<textarea name="Message" rows="3" maxlength="600" placeholder="e.g. I have a GP referral and would like an appointment"></textarea></label>
-      <p class="form-note">Please don't include detailed medical information. A GP referral letter is required for a private consultation.</p>
+      <p class="form-note">Please don't include detailed medical information. A GP referral letter is required for a private consultation. See our <a href="privacy.html">privacy policy</a>.</p>
       <label class="check"><input type="checkbox" name="Consent to contact" value="Yes" required> I agree to be contacted about my enquiry.</label>
       <button type="submit" class="btn-primary">Send enquiry</button>
     </form>
@@ -2141,7 +2170,7 @@
   <div class="footer-right">
     © 2026 Dr Babu Kunadian · Nuffield Health Grosvenor Hospital, Chester<br>
     drbabukunadian.co.uk<br>
-    <span class="footer-privacy">Enquiries and reviews sent through this website go only to Dr Kunadian's secretary and are used solely to respond to you.</span>
+    <span class="footer-privacy">Enquiries and reviews sent through this website go only to Dr Kunadian's secretary and are used solely to respond to you. <a href="privacy.html" style="color:rgba(255,255,255,0.6)">Privacy policy</a></span>
   </div>
 </footer>
 
