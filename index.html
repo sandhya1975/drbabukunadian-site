@@ -1,11 +1,68 @@
-<!-- v2.0 updated -->
+<!-- v3.0 — enquiry + SEO upgrade -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Professor Babu Kunadian | Consultant Cardiologist | Chester & Liverpool</title>
-<meta name="description" content="Professor Babu Kunadian - Consultant General and Interventional Cardiologist serving Chester, Liverpool and Merseyside. Nuffield Health Grosvenor Hospital, Chester. Published in The Lancet and BMJ.">
+<title>Private Cardiologist Chester & Liverpool | Dr Babu Kunadian</title>
+<meta name="description" content="Dr Babu Kunadian — Consultant General & Interventional Cardiologist. Private consultations at Nuffield Health Grosvenor Hospital, Chester. Chest pain, palpitations, angina, heart rhythm and valve disease. All major insurers accepted. Call 01244 680 444.">
+<meta name="keywords" content="private cardiologist Chester, cardiologist Liverpool, cardiologist Wirral, Merseyside cardiologist, chest pain specialist, palpitations, angina, atrial fibrillation, coronary CT, echocardiogram, Nuffield Health Grosvenor Hospital">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a1628">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dr Babu Kunadian | Private Cardiologist, Chester & Liverpool">
+<meta property="og:description" content="Consultant General & Interventional Cardiologist. Private consultations at Nuffield Health Grosvenor Hospital, Chester. All major insurers accepted.">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230a1628'/%3E%3Ctext x='50' y='66' font-size='46' text-anchor='middle' fill='%23c8a96e' font-family='Georgia,serif'%3EBK%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dr Babu Kunadian",
+  "description": "Consultant General and Interventional Cardiologist serving Chester, Liverpool, Wirral and Merseyside.",
+  "medicalSpecialty": "Cardiovascular",
+  "sameAs": ["https://www.nuffieldhealth.com/consultants/dr-babu-kunadian"],
+  "availableService": [
+    {"@type": "MedicalProcedure", "name": "In-person cardiology consultation"},
+    {"@type": "MedicalProcedure", "name": "Video consultation"},
+    {"@type": "MedicalProcedure", "name": "Telephone consultation"}
+  ],
+  "telephone": "+441244680444",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Nuffield Health The Grosvenor Hospital, Wrexham Road",
+    "addressLocality": "Chester",
+    "postalCode": "CH4 7QP",
+    "addressCountry": "GB"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Wednesday",
+    "opens": "15:30",
+    "closes": "20:00"
+  },
+  "areaServed": ["Chester", "Liverpool", "Wirral", "Merseyside"],
+  "hospitalAffiliation": [
+    {"@type": "Hospital", "name": "Nuffield Health The Grosvenor Hospital, Chester"},
+    {"@type": "Hospital", "name": "Liverpool Heart & Chest Hospital"},
+    {"@type": "Hospital", "name": "Countess of Chester Hospital"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Do I need a GP referral to see Dr Kunadian?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A GP referral letter is required for a private consultation."}},
+    {"@type": "Question", "name": "Which insurers are accepted?", "acceptedAnswer": {"@type": "Answer", "text": "All major UK private medical insurers are accepted, including Bupa, AXA, Aviva, Vitality, WPA, Cigna, Benenden, The Exeter, Simplyhealth, Universal Provident and Westfield Health. Self-paying patients are also welcome."}},
+    {"@type": "Question", "name": "Where and when are consultations held?", "acceptedAnswer": {"@type": "Answer", "text": "Private consultations are held at Nuffield Health The Grosvenor Hospital, Wrexham Road, Chester, CH4 7QP, on Wednesdays from 15:30 to 20:00."}},
+    {"@type": "Question", "name": "Are video or telephone consultations available?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Dr Kunadian offers in-person, video and telephone consultations."}},
+    {"@type": "Question", "name": "How do I book an appointment?", "acceptedAnswer": {"@type": "Answer", "text": "Call Nuffield Health Grosvenor Hospital on 01244 680 444, or the secretary directly on 01244 366301 or 07716 151272."}}
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -936,10 +993,337 @@
     color: rgba(255,255,255,0.35);
   }
 
+  /* ===== v3 ENQUIRY UPGRADE ===== */
+
+  /* Nav phone link */
+  .nav-phone {
+    color: var(--accent-light) !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  /* Mobile menu button */
+  .menu-btn {
+    display: none;
+    background: none;
+    border: 1px solid rgba(200,169,110,0.4);
+    color: var(--accent);
+    width: 42px; height: 42px;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px; left: 0; right: 0;
+    background: var(--navy);
+    border-bottom: 1px solid rgba(200,169,110,0.25);
+    z-index: 999;
+    padding: 1rem 8% 1.5rem;
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu a {
+    display: block;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.95rem;
+  }
+  .mobile-menu a:last-child { border-bottom: none; color: var(--accent); font-weight: 500; }
+
+  /* Hero monogram (replaces empty photo placeholder until a photo is supplied) */
+  .hero-monogram {
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(200,169,110,0.18) 0%, transparent 55%),
+      linear-gradient(180deg, var(--mid-blue) 0%, var(--navy) 100%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(200,169,110,0.25);
+  }
+  .hero-monogram .mono {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 7rem;
+    color: var(--accent);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.04em;
+  }
+  .hero-monogram .mono-line {
+    width: 60px; height: 1px;
+    background: var(--accent);
+    margin: 1.2rem 0;
+    opacity: 0.6;
+  }
+  .hero-monogram .mono-sub {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .hero-reassure {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.82rem;
+  }
+  .hero-reassure span::before { content: '✓ '; color: var(--accent); }
+
+  /* HOW TO BOOK — 3 steps */
+  .steps-section { background: var(--white); }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+    counter-reset: step;
+  }
+  .step-card {
+    position: relative;
+    background: var(--off-white);
+    padding: 2.2rem 1.8rem 1.8rem;
+    border-radius: 4px;
+    border-top: 3px solid var(--accent);
+  }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  .step-card h3 {
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 0.6rem;
+  }
+  .step-card p {
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    line-height: 1.65;
+  }
+  .step-card a { color: var(--mid-blue); font-weight: 500; }
+  .steps-cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .btn-navy {
+    background: var(--navy);
+    color: var(--white);
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+  .btn-navy:hover { background: var(--mid-blue); transform: translateY(-2px); }
+  .steps-cta small { color: var(--text-light); font-size: 0.82rem; }
+
+  /* FAQ */
+  .faq-section { background: var(--off-white); }
+  .faq-list { max-width: 820px; margin-top: 2.5rem; }
+  .faq-item {
+    background: var(--white);
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+    border-left: 3px solid transparent;
+    transition: border-color 0.3s;
+  }
+  .faq-item[open] { border-left-color: var(--accent); }
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.2rem 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--navy);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    color: var(--accent);
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .faq-a {
+    padding: 0 1.5rem 1.3rem;
+    color: var(--text-mid);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+  .faq-item .faq-a a { color: var(--mid-blue); font-weight: 500; }
+
+  /* Floating desktop book button */
+  .float-book {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 998;
+    background: var(--accent);
+    color: var(--navy);
+    text-decoration: none;
+    padding: 0.95rem 1.4rem;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 0.88rem;
+    letter-spacing: 0.03em;
+    box-shadow: 0 10px 30px rgba(10,22,40,0.35);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.4s;
+  }
+  .float-book.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .float-book:hover { background: var(--accent-light); }
+
+  /* Sticky mobile call bar */
+  .mobile-bar {
+    display: none;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 999;
+    background: var(--navy);
+    border-top: 1px solid rgba(200,169,110,0.3);
+    padding: 0.6rem 0.8rem calc(0.6rem + env(safe-area-inset-bottom));
+    gap: 0.6rem;
+  }
+  .mobile-bar a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.85rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+  }
+  .mobile-bar .mb-call { background: var(--accent); color: var(--navy); }
+  .mobile-bar .mb-book { border: 1px solid rgba(255,255,255,0.3); color: var(--white); }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .ecg-line { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* Section anchors clear the fixed nav */
+  section[id] { scroll-margin-top: 70px; }
+
+  a:focus-visible, summary:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+
+  [hidden] { display: none !important; }
+
+  /* About photo */
+  .about-photo { margin: 0 0 1.5rem; }
+  .about-photo img { width: 100%; height: auto; display: block; border-radius: 4px; box-shadow: 0 20px 50px rgba(10,22,40,0.15); }
+  .about-photo figcaption { font-size: 0.78rem; color: var(--text-light); margin-top: 0.6rem; font-style: italic; }
+  .hero-photo { object-position: center top; box-shadow: 0 30px 60px rgba(0,0,0,0.35); }
+
+  .location-link { display: inline-block; margin-top: 0.8rem; color: var(--mid-blue); font-size: 0.85rem; font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--accent); }
+  .btn-ghost { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+  .btn-ghost:hover { background: var(--navy); color: var(--white); }
+  button.btn-navy { border: none; cursor: pointer; font-family: inherit; }
+  .muted { color: var(--text-light); font-size: 0.85rem; }
+
+  /* Reviews */
+  .reviews-section { background: var(--white); }
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+  .review-card { margin: 0; background: var(--off-white); padding: 1.8rem; border-radius: 4px; border-top: 3px solid var(--accent); }
+  .review-stars { color: var(--accent); letter-spacing: 0.15em; margin-bottom: 0.8rem; }
+  .review-stars span { color: #d9d4ca; }
+  .review-card blockquote { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; line-height: 1.5; color: var(--navy); margin-bottom: 1rem; }
+  .review-card figcaption { font-size: 0.8rem; color: var(--text-light); }
+  .review-empty { grid-column: 1 / -1; background: var(--off-white); border: 1px dashed rgba(200,169,110,0.6); border-radius: 4px; padding: 2rem; text-align: center; color: var(--navy); }
+  .review-empty p:first-child { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 0.3rem; }
+  .reviews-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+  .review-form { margin-top: 2rem; max-width: 720px; }
+
+  /* Forms */
+  .site-form { background: var(--off-white); padding: 2rem; border-radius: 4px; border: 1px solid var(--light-grey); display: grid; gap: 1rem; }
+  .site-form label { display: grid; gap: 0.4rem; font-size: 0.82rem; font-weight: 500; color: var(--navy); }
+  .site-form input, .site-form select, .site-form textarea {
+    font: inherit; font-size: 0.95rem; font-weight: 400; color: var(--text-dark);
+    background: var(--white); border: 1px solid #d9d4ca; border-radius: 3px; padding: 0.75rem 0.85rem; width: 100%;
+  }
+  .site-form input:focus, .site-form select:focus, .site-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+  .site-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .site-form .check { display: flex; gap: 0.6rem; align-items: flex-start; font-weight: 400; color: var(--text-mid); }
+  .site-form .check input { width: auto; margin-top: 0.2rem; accent-color: var(--navy); }
+  .site-form button { border: none; cursor: pointer; font-family: inherit; justify-self: start; }
+  .form-note { font-size: 0.78rem; color: var(--text-light); line-height: 1.5; }
+  .form-success { margin-top: 1rem; background: #eef6ee; border-left: 4px solid #3c8a4a; padding: 1rem 1.2rem; border-radius: 0 4px 4px 0; color: #24502c; font-size: 0.9rem; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+  /* Enquiry section */
+  .enquire-section { background: var(--light-grey); display: grid; grid-template-columns: 1fr 1.1fr; gap: 5rem; align-items: start; }
+  .enquire-intro p { color: var(--text-mid); line-height: 1.75; margin-bottom: 1.2rem; font-size: 0.95rem; }
+  .enquire-points { list-style: none; margin-bottom: 1.5rem; }
+  .enquire-points li { padding: 0.45rem 0; color: var(--navy); font-size: 0.92rem; }
+  .enquire-points li::before { content: '✓  '; color: var(--accent); font-weight: 600; }
+  .footer-privacy { display: inline-block; margin-top: 0.4rem; max-width: 420px; }
+
   /* RESPONSIVE */
+  @media (max-width: 1100px) {
+    .nav-links { gap: 1.2rem; }
+    .nav-phone-li { display: none; }
+  }
+
   @media (max-width: 900px) {
+    .menu-btn { display: block; }
+    .mobile-bar { display: flex; }
+    .float-book { display: none; }
+    body { padding-bottom: 72px; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .hero-stats { flex-wrap: wrap; }
+    .stat { flex: 1 1 40%; }
     .hero { grid-template-columns: 1fr; padding-top: 120px; }
-    .hero-image { display: none; }
+    .hero-image { order: -1; margin-bottom: 1.5rem; }
+    .hero-photo-frame { width: 220px; height: 278px; margin: 0 auto; }
+    .hero-photo-frame::before { top: -10px; right: -10px; }
+    .hero-credentials { display: none; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .enquire-section { grid-template-columns: 1fr; gap: 2rem; }
+    .site-form { padding: 1.4rem; }
+    .site-form .form-row { grid-template-columns: 1fr; }
     .about { grid-template-columns: 1fr; gap: 2rem; }
     .conditions-grid { grid-template-columns: 1fr; }
     .treatments-grid { grid-template-columns: repeat(2, 1fr); }
@@ -960,16 +1344,29 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Prof. Babu <span>Kunadian</span></div>
+  <div class="nav-logo">Dr Babu <span>Kunadian</span></div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#conditions">Conditions</a></li>
     <li><a href="#research">Research</a></li>
     <li><a href="#academic">Academic</a></li>
     <li><a href="#locations">Locations</a></li>
+    <li><a href="#faq">FAQs</a></li>
+    <li class="nav-phone-li"><a href="tel:01244680444" class="nav-phone">📞 01244 680 444</a></li>
     <li><a href="#book" class="nav-cta">Book Appointment</a></li>
   </ul>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#conditions">Conditions</a>
+  <a href="#research">Research</a>
+  <a href="#academic">Academic</a>
+  <a href="#locations">Locations</a>
+  <a href="#faq">FAQs</a>
+  <a href="#book">Book Appointment →</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -977,7 +1374,7 @@
     <div class="hero-badge">
       ✦ Bupa Platinum Consultant &nbsp;·&nbsp; FRCP London
     </div>
-    <h1>Professor<strong>Babu Kunadian</strong></h1>
+    <h1>Dr<strong>Babu Kunadian</strong></h1>
     <p class="hero-title">Consultant General & Interventional Cardiologist</p>
     <p class="hero-quals">MBBS, MD, FRCP (London), MA Clin Ed</p>
 
@@ -995,23 +1392,27 @@
         <span class="stat-label">International<br>Abstracts</span>
       </div>
       <div class="stat">
-        <span class="stat-number">360+</span>
+        <span class="stat-number">300+</span>
         <span class="stat-label">Doctors<br>Mentored</span>
       </div>
     </div>
 
     <div class="hero-btns">
-      <a href="#book" class="btn-primary">Book a Consultation</a>
-      <a href="#about" class="btn-outline">Learn More</a>
+      <a href="#how-to-book" class="btn-primary">Book a Consultation</a>
+      <a href="tel:01244680444" class="btn-outline">📞 01244 680 444</a>
+    </div>
+
+    <div class="hero-reassure">
+      <span>All major insurers</span>
+      <span>Self-pay welcome</span>
+      <span>Wednesday evening clinics</span>
+      <span>Video &amp; phone consultations</span>
     </div>
   </div>
 
   <div class="hero-image">
     <div class="hero-photo-frame">
-      <div class="hero-photo-placeholder">
-        👨‍⚕️
-        <p style="font-size:0.9rem;margin-top:1rem;text-align:center;padding:0 1rem;">Add professional photo here</p>
-      </div>
+      <img class="hero-photo" src="babu-portrait.jpg" alt="Dr Babu Kunadian, Consultant Cardiologist, at Liverpool Heart and Chest Hospital" width="871" height="1100" fetchpriority="high">
       <div class="hero-credentials">
         <strong>Published in</strong><br>
         The Lancet · BMJ<br>
@@ -1052,19 +1453,54 @@
   </div>
 </div>
 
+<!-- HOW TO BOOK -->
+<section class="steps-section" id="how-to-book">
+  <p class="section-label">Seeing Dr Kunadian</p>
+  <h2 class="section-title">Booking is simple — three steps</h2>
+  <div class="section-divider"></div>
+
+  <div class="steps-grid">
+    <div class="step-card reveal">
+      <span class="step-num">01</span>
+      <h3>Get your GP referral</h3>
+      <p>Ask your GP for a referral letter to Dr Kunadian. A GP referral letter is required for a private consultation.</p>
+    </div>
+    <div class="step-card reveal">
+      <span class="step-num">02</span>
+      <h3>Check your cover</h3>
+      <p>If you have private medical insurance, contact your insurer to confirm your benefit. All major UK insurers are accepted, and self-paying patients are welcome.</p>
+    </div>
+    <div class="step-card reveal">
+      <span class="step-num">03</span>
+      <h3>Call to book</h3>
+      <p>Call Nuffield Health Grosvenor Hospital on <a href="tel:01244680444">01244 680 444</a>, or the secretary, Michele White, on <a href="tel:01244366301">01244 366301</a> / <a href="tel:07716151272">07716 151272</a>. You can also <a href="https://www.nuffieldhealth.com/consultants/dr-babu-kunadian" target="_blank" rel="noopener">book via his Nuffield Health profile</a>.</p>
+    </div>
+  </div>
+
+  <div class="steps-cta">
+    <a href="tel:01244680444" class="btn-navy">📞 Call 01244 680 444</a>
+    <a href="https://www.nuffieldhealth.com/consultants/dr-babu-kunadian" class="btn-navy btn-ghost" target="_blank" rel="noopener">Book via Nuffield Health ↗</a>
+    <small>In-person clinics on Wednesdays, 15:30 – 20:00 at Nuffield Health The Grosvenor Hospital, Chester · Video and telephone consultations also available</small>
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-text">
-    <p class="section-label">About Professor Kunadian</p>
+    <p class="section-label">About Dr Kunadian</p>
     <h2 class="section-title">A cardiologist you can trust with your heart</h2>
     <div class="section-divider"></div>
     <p>I am an Academic Consultant General and Interventional Cardiologist with over 13 years of experience at the Countess of Chester Hospital and Liverpool Heart & Chest Hospital. I see private patients at Nuffield Health The Grosvenor Hospital, Chester — serving patients across Chester, Liverpool, Wirral and the wider Merseyside region.</p>
     <p>My training spans the prestigious Mersey Cardiology Programme, an Interventional Cardiology Fellowship at the University of Alberta, Canada, and a research doctorate at Newcastle University. I hold an MA in Clinical Education from Edge Hill University and have completed the Oxford Executive Leadership Programme at the University of Oxford.</p>
     <p>I am accredited in Cardiac CT by the British Society of Cardiac Computed Tomography, and I previously served as Clinical Director of Diagnostic and Clinical Services at the Countess of Chester Hospital, where I oversaw clinical operations across multiple specialties.</p>
-    <p>Alongside my clinical work, I serve as Year 2 Director of the MBChB Programme at the University of Liverpool School of Medicine, where I lead curriculum design, assessment and student wellbeing. I hold an Honorary Professorship at Chester Medical School, University of Chester.</p>
+    <p>Alongside my clinical work, I serve as Year 2 Director of the MBChB Programme at the University of Liverpool School of Medicine, where I lead curriculum design, assessment and student wellbeing.</p>
   </div>
 
   <div>
+    <figure class="about-photo reveal">
+      <img src="babu-lhch.jpg" alt="Dr Babu Kunadian at the cardiac catheter labs, Liverpool Heart and Chest Hospital" width="1400" height="934" loading="lazy">
+      <figcaption>At the cardiac catheter labs, Liverpool Heart &amp; Chest Hospital</figcaption>
+    </figure>
     <div class="about-highlights">
       <div class="highlight-card">
         <h4>Oxford Leadership</h4>
@@ -1104,7 +1540,7 @@
     <div class="credential-card">
       <div class="credential-icon">🎓</div>
       <h3>Academic Positions</h3>
-      <p>Year 2 Director, MBChB Programme — University of Liverpool School of Medicine. Honorary Professor — Chester Medical School, University of Chester. Previous honorary roles at Newcastle University.</p>
+      <p>Year 2 Director, MBChB Programme — University of Liverpool School of Medicine. Previous honorary roles at Newcastle University.</p>
     </div>
     <div class="credential-card">
       <div class="credential-icon">🏥</div>
@@ -1141,7 +1577,7 @@
   <div class="section-divider"></div>
 
   <div class="conditions-intro">
-    <p>Whether you are experiencing symptoms for the first time, seeking a second opinion, or want preventive cardiac assessment — Professor Kunadian offers expert diagnosis and personalised management across the full range of heart conditions.</p>
+    <p>Whether you are experiencing symptoms for the first time, seeking a second opinion, or want preventive cardiac assessment — Dr Kunadian offers expert diagnosis and personalised management across the full range of heart conditions.</p>
   </div>
 
   <div class="conditions-grid">
@@ -1282,7 +1718,7 @@
 
   <div class="research-grid">
     <div class="research-main">
-      <p>Professor Kunadian's research career began in acute myocardial infarction (heart attack), culminating in an academic MD Degree from Newcastle University (2004–2007). His thesis at James Cook University Hospital evaluated the reorganisation of myocardial infarction service delivery — specifically the transition from thrombolysis-based care to a primary PCI service, including the final analysis of the landmark MERLIN randomised trial.</p>
+      <p>Dr Kunadian's research career began in acute myocardial infarction (heart attack), culminating in an academic MD Degree from Newcastle University (2004–2007). His thesis at James Cook University Hospital evaluated the reorganisation of myocardial infarction service delivery — specifically the transition from thrombolysis-based care to a primary PCI service, including the final analysis of the landmark MERLIN randomised trial.</p>
 
       <p>His scholarly output includes 29 peer-reviewed journal publications (17 as first author), 18 original articles, 5 reviews, 3 case reports, and a book chapter on adjunctive PCI technology in the second edition of <em>Essential Interventional Cardiology</em>. He contributed to the EACTS clinical guideline on antiplatelet and anticoagulation management in cardiac surgery (European Journal of Cardiothoracic Surgery, 2008). He has reviewed over 60 manuscripts since 2007 for leading journals including Heart, Annals of Internal Medicine and European Journal of Cardiothoracic Surgery.</p>
 
@@ -1299,11 +1735,11 @@
 
       <div class="research-impact" style="margin-top:2rem">
         <h4>🏆 National Impact — A UK-Wide Standard</h4>
-        <p>Professor Kunadian's research group was the first in the UK to publish individual PCI (Percutaneous Coronary Intervention) operator outcomes — a groundbreaking paper published in the BMJ (2008). Using cumulative funnel plots and statistical process control, this methodology has since been adopted across the entire UK by the British Cardiac Interventional Society (BCIS) for reporting individual cardiologist and hospital outcomes. His model is now a national standard used to assess performance across the NHS. He was also an invited expert presenter at the Transcatheter Cardiovascular Therapeutics (TCT) Conference, Washington DC, USA (2007).</p>
+        <p>Dr Kunadian's research group was the first in the UK to publish individual PCI (Percutaneous Coronary Intervention) operator outcomes — a groundbreaking paper published in the BMJ (2008). Using cumulative funnel plots and statistical process control, this methodology has since been adopted across the entire UK by the British Cardiac Interventional Society (BCIS) for reporting individual cardiologist and hospital outcomes. His model is now a national standard used to assess performance across the NHS. He was also an invited expert presenter at the Transcatheter Cardiovascular Therapeutics (TCT) Conference, Washington DC, USA (2007).</p>
       </div>
 
       <div class="research-impact" style="margin-top:1rem">
-        <h4>📊 Selected Key Publications — Professor Babu Kunadian</h4>
+        <h4>📊 Selected Key Publications — Dr Babu Kunadian</h4>
         <p><strong>Lancet (2014):</strong> HEAT-PPCI Trial — Unfractionated heparin versus bivalirudin in primary PCI (529 citations)<br>
         <strong>BMJ (2008):</strong> Cumulative funnel plots for early detection of inter-operator variation in PCI — first UK publication of individual operator outcomes<br>
         <strong>Heart (2010):</strong> Impact of evidence-based strategies to reduce door-to-balloon time in STEMI using statistical process control<br>
@@ -1360,17 +1796,12 @@
       <div class="academic-role">
         <h4>Year 2 Director, MBChB Programme</h4>
         <p class="org">University of Liverpool — School of Medicine, Faculty of Health & Life Sciences</p>
-        <p>As Year 2 Director, Professor Kunadian leads undergraduate medical education combining extensive frontline clinical experience with innovative, student-centred teaching. He is responsible for curriculum design, assessment frameworks, simulation-based learning, and student wellbeing across the entire Year 2 medical programme at one of the UK's leading Russell Group universities.</p>
-      </div>
-      <div class="academic-role">
-        <h4>Honorary Professor</h4>
-        <p class="org">Chester Medical School, University of Chester</p>
-        <p>Honorary academic position recognising sustained contribution to medical education, clinical research and professional leadership. Previously held honorary roles at Newcastle University and the University of Liverpool.</p>
+        <p>As Year 2 Director, Dr Kunadian leads undergraduate medical education combining extensive frontline clinical experience with innovative, student-centred teaching. He is responsible for curriculum design, assessment frameworks, simulation-based learning, and student wellbeing across the entire Year 2 medical programme at one of the UK's leading Russell Group universities.</p>
       </div>
       <div class="academic-role">
         <h4>Teaching Philosophy & Approach</h4>
         <p class="org">Medical Education — Career-Long Commitment</p>
-        <p>Professor Kunadian has designed, led and delivered teaching for medical students, junior doctors and allied health professionals across case-based, problem-based, tutorial and simulation-based learning modalities. He has acted as a PACES examiner for the MRCP examinations with the Royal College of Physicians. His teaching is informed by an MA in Clinical Education from Edge Hill University and specialist coaching and mentoring training through the NHS Northwest Leadership Academy.</p>
+        <p>Dr Kunadian has designed, led and delivered teaching for medical students, junior doctors and allied health professionals across case-based, problem-based, tutorial and simulation-based learning modalities. He has acted as a PACES examiner for the MRCP examinations with the Royal College of Physicians. His teaching is informed by an MA in Clinical Education from Edge Hill University and specialist coaching and mentoring training through the NHS Northwest Leadership Academy.</p>
       </div>
       <div class="academic-role">
         <h4>Postgraduate Training & Supervision</h4>
@@ -1433,7 +1864,7 @@
   <div class="section-divider"></div>
 
   <div class="insurance-intro">
-    <p>Professor Kunadian is a recognised consultant with all major UK private medical insurers. If you have private health insurance, your consultation and investigations may be covered. Please contact your insurer to confirm your benefit before your appointment.</p>
+    <p>Dr Kunadian is a recognised consultant with all major UK private medical insurers. If you have private health insurance, your consultation and investigations may be covered. Please contact your insurer to confirm your benefit before your appointment.</p>
   </div>
 
   <div class="insurance-grid">
@@ -1467,16 +1898,17 @@
     <div class="location-card">
       <span class="location-tag">Private Consultations</span>
       <h3>Nuffield Health The Grosvenor Hospital</h3>
-      <p>Chester's leading private hospital. Professor Kunadian sees private patients here every Wednesday afternoon.</p>
+      <p>Chester's leading private hospital. Dr Kunadian sees private patients here every Wednesday afternoon.</p>
       <div class="location-detail">📍 Wrexham Road, Chester, CH4 7QP</div>
       <div class="location-detail">📞 01244 680 444</div>
       <div class="location-detail">📅 Wednesdays 15:30 – 20:00</div>
       <div class="location-detail">⭐ CQC Rated Good</div>
+      <a class="location-link" href="https://www.nuffieldhealth.com/consultants/dr-babu-kunadian" target="_blank" rel="noopener">View Nuffield Health profile ↗</a>
     </div>
     <div class="location-card">
       <span class="location-tag">Interventional Cardiology</span>
       <h3>Liverpool Heart & Chest Hospital</h3>
-      <p>One of the UK's largest and busiest specialist cardiac centres. Professor Kunadian performs complex interventional cardiac procedures here.</p>
+      <p>One of the UK's largest and busiest specialist cardiac centres. Dr Kunadian performs complex interventional cardiac procedures here.</p>
       <div class="location-detail">📍 Thomas Drive, Liverpool, L14 3PE</div>
       <div class="location-detail">🫀 Interventional cardiology & complex procedures</div>
       <div class="location-detail">🏥 Academic Consultant base</div>
@@ -1484,11 +1916,102 @@
     <div class="location-card">
       <span class="location-tag">NHS & Clinical Directorate</span>
       <h3>Countess of Chester Hospital</h3>
-      <p>Professor Kunadian previously served as Clinical Director of Diagnostics and Clinical Services and led the appraisal and revalidation programme for over 360 doctors.</p>
+      <p>Dr Kunadian previously served as Clinical Director of Diagnostics and Clinical Services and led the appraisal and revalidation programme for over 300 doctors.</p>
       <div class="location-detail">📍 Liverpool Road, Chester, CH2 1UL</div>
       <div class="location-detail">👨‍💼 Previous Clinical Director — Diagnostics</div>
       <div class="location-detail">🎓 NHS Northwest Leadership Mentor</div>
     </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<!-- HOW TO ADD A REVIEW (for Michele): open reviews.json on GitHub, click the pencil,
+     copy an entry, change the text, click "Commit changes". The site updates in about a minute. -->
+<section class="reviews-section" id="reviews">
+  <p class="section-label">Patient Experiences</p>
+  <h2 class="section-title">What patients say</h2>
+  <div class="section-divider"></div>
+
+  <div class="reviews-grid" id="reviewsGrid" aria-live="polite">
+    <div class="review-empty" id="reviewEmpty">
+      <p>Patient reviews will appear here.</p>
+      <p class="muted">Seen Dr Kunadian? We'd be grateful if you shared your experience.</p>
+    </div>
+  </div>
+
+  <div class="reviews-actions">
+    <button type="button" class="btn-navy" id="openReview">✍️ Leave a review</button>
+    <a href="https://www.nuffieldhealth.com/consultants/dr-babu-kunadian" class="btn-navy btn-ghost" target="_blank" rel="noopener">Nuffield Health profile ↗</a>
+  </div>
+
+  <form class="site-form review-form" id="reviewForm" hidden
+        action="https://formsubmit.co/michele.white@lhch.nhs.uk" method="POST">
+    <input type="hidden" name="_subject" value="New patient review — drbabukunadian website">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" class="form-next" value="">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="Form" value="Patient review">
+
+    <div class="form-row">
+      <label>First name / initials<input type="text" name="Name" required maxlength="60" placeholder="e.g. Sarah T."></label>
+      <label>Rating
+        <select name="Rating" required>
+          <option value="5">★★★★★ — Excellent</option>
+          <option value="4">★★★★ — Very good</option>
+          <option value="3">★★★ — Good</option>
+          <option value="2">★★ — Fair</option>
+          <option value="1">★ — Poor</option>
+        </select>
+      </label>
+    </div>
+    <label>Your review<textarea name="Review" required rows="4" maxlength="800" placeholder="How was your experience?"></textarea></label>
+    <p class="form-note">Please don't include personal medical details. Reviews are checked before they are published.</p>
+    <label class="check"><input type="checkbox" name="Consent to publish" value="Yes" required> I'm happy for my first name/initials and review to be shown on this website.</label>
+    <button type="submit" class="btn-primary">Submit review</button>
+  </form>
+  <p class="form-success" id="reviewSent" hidden>Thank you — your review has been sent and will appear once checked.</p>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <p class="section-label">Patient Questions</p>
+  <h2 class="section-title">Frequently asked questions</h2>
+  <div class="section-divider"></div>
+
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>Do I need a GP referral?</summary>
+      <div class="faq-a">Yes. A GP referral letter is required to book a private consultation with Dr Kunadian.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Which insurers are accepted?</summary>
+      <div class="faq-a">All major UK private medical insurers, including Aviva, AXA, Bupa, Bupa On Demand, WPA, Benenden Health, Cigna, The Exeter, Simplyhealth, Universal Provident, Vitality Health and Westfield Health. Please contact your insurer to confirm your benefit before your appointment.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Can I pay for myself without insurance?</summary>
+      <div class="faq-a">Yes — self-paying patients are welcome. Please contact the secretary at Nuffield Health Grosvenor Hospital, Chester, for current consultation fees.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Where and when are appointments?</summary>
+      <div class="faq-a">Private consultations take place at Nuffield Health The Grosvenor Hospital, Wrexham Road, Chester, CH4 7QP, on Wednesdays from 15:30 to 20:00.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What conditions does Dr Kunadian see?</summary>
+      <div class="faq-a">The full range of adult heart conditions, including chest pain, breathlessness, angina, heart rhythm problems such as palpitations and atrial fibrillation, heart valve disease, cardiomyopathy, high blood pressure and cholesterol, and preventive cardiac assessment. See <a href="#conditions">Conditions Treated</a> for the full list.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do you offer video or telephone consultations?</summary>
+      <div class="faq-a">Yes. As well as in-person clinics in Chester, Dr Kunadian offers both video and telephone consultations. Please mention your preference when you call to book.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Can I get a second opinion?</summary>
+      <div class="faq-a">Yes. Second opinion consultations are available — speak to your GP about a referral, then call to book.</div>
+    </details>
+    <details class="faq-item">
+      <summary>How do I book?</summary>
+      <div class="faq-a">Call Nuffield Health Grosvenor Hospital on <a href="tel:01244680444">01244 680 444</a>, or the secretary directly on <a href="tel:01244366301">01244 366301</a> or <a href="tel:07716151272">07716 151272</a>.</div>
+    </details>
   </div>
 </section>
 
@@ -1497,9 +2020,13 @@
   <div class="booking-content">
     <p class="section-label" style="color:var(--accent)">Book a Consultation</p>
     <h2 class="section-title">Take the first step towards expert cardiac care</h2>
-    <p>Whether you are experiencing concerning symptoms, seeking reassurance, or would like a comprehensive heart assessment — Professor Kunadian offers clear explanations, personalised management, and access to the latest cardiac diagnostics, all in a single appointment.</p>
+    <p>Whether you are experiencing concerning symptoms, seeking reassurance, or would like a comprehensive heart assessment — Dr Kunadian offers clear explanations, personalised management, and access to the latest cardiac diagnostics, all in a single appointment.</p>
     <p>To book your private consultation, please contact his secretary directly at Nuffield Health The Grosvenor Hospital, Chester. A GP referral letter is required.</p>
-    <a href="tel:01244680444" class="btn-primary">Call Nuffield: 01244 680 444</a>
+    <div class="hero-btns">
+      <a href="tel:01244680444" class="btn-primary">Call Nuffield: 01244 680 444</a>
+      <a href="https://www.nuffieldhealth.com/consultants/dr-babu-kunadian" class="btn-outline" target="_blank" rel="noopener">Nuffield Profile ↗</a>
+      <a href="#enquire" class="btn-outline">Send an Enquiry</a>
+    </div>
   </div>
 
   <div class="booking-details">
@@ -1513,11 +2040,15 @@
     </div>
     <div class="booking-detail-item">
       <p class="booking-detail-label">Secretary Direct</p>
-      <p class="booking-detail-value"><a href="tel:01244366301">01244 366301</a> / <a href="tel:01512543104">0151 254 3104</a></p>
+      <p class="booking-detail-value"><a href="tel:01244366301">01244 366301</a> / <a href="tel:07716151272">07716 151272</a></p>
     </div>
     <div class="booking-detail-item">
       <p class="booking-detail-label">Consultation Days</p>
       <p class="booking-detail-value">Wednesdays — 15:30 to 20:00</p>
+    </div>
+    <div class="booking-detail-item">
+      <p class="booking-detail-label">Consultation Types</p>
+      <p class="booking-detail-value">In person · Video · Telephone</p>
     </div>
     <div class="booking-detail-item">
       <p class="booking-detail-label">Location</p>
@@ -1533,16 +2064,163 @@
   </div>
 </section>
 
+<!-- ENQUIRY FORM -->
+<section class="enquire-section" id="enquire">
+  <div class="enquire-intro">
+    <p class="section-label">Send an Enquiry</p>
+    <h2 class="section-title">Prefer we call you back?</h2>
+    <div class="section-divider"></div>
+    <p>Leave your details and Dr Kunadian's secretary, Michele White, will contact you to arrange your consultation — in person in Chester, by video or by telephone.</p>
+    <ul class="enquire-points">
+      <li>Replies from Dr Kunadian's secretary</li>
+      <li>Insured and self-paying patients welcome</li>
+      <li>In-person, video or telephone appointments</li>
+    </ul>
+    <p class="muted">Urgent symptoms such as chest pain? Do not use this form — call <strong>999</strong>.</p>
+  </div>
+
+  <div>
+    <form class="site-form" id="enquiryForm" action="https://formsubmit.co/michele.white@lhch.nhs.uk" method="POST">
+      <input type="hidden" name="_subject" value="New appointment enquiry — drbabukunadian website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" class="form-next" value="">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="Form" value="Appointment enquiry">
+
+      <label>Full name<input type="text" name="Name" required maxlength="80" autocomplete="name"></label>
+      <div class="form-row">
+        <label>Phone<input type="tel" name="Phone" required maxlength="20" autocomplete="tel"></label>
+        <label>Email<input type="email" name="email" required maxlength="100" autocomplete="email"></label>
+      </div>
+      <div class="form-row">
+        <label>Appointment type
+          <select name="Appointment type">
+            <option>In person — Chester</option>
+            <option>Video consultation</option>
+            <option>Telephone consultation</option>
+          </select>
+        </label>
+        <label>Payment
+          <select name="Payment">
+            <option>Private medical insurance</option>
+            <option>Self-pay</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+      </div>
+      <label>Best time to call
+        <select name="Best time to call">
+          <option>Any time</option>
+          <option>Morning</option>
+          <option>Afternoon</option>
+          <option>Evening</option>
+        </select>
+      </label>
+      <label>Message (optional)<textarea name="Message" rows="3" maxlength="600" placeholder="e.g. I have a GP referral and would like an appointment"></textarea></label>
+      <p class="form-note">Please don't include detailed medical information. A GP referral letter is required for a private consultation.</p>
+      <label class="check"><input type="checkbox" name="Consent to contact" value="Yes" required> I agree to be contacted about my enquiry.</label>
+      <button type="submit" class="btn-primary">Send enquiry</button>
+    </form>
+    <p class="form-success" id="enquirySent" hidden>Thank you — your enquiry has been sent. Michele will be in touch shortly.</p>
+  </div>
+</section>
+
+<!-- FLOATING / MOBILE CTAs -->
+<a href="#how-to-book" class="float-book" id="floatBook">📅 Book a consultation</a>
+<div class="mobile-bar">
+  <a href="tel:01244680444" class="mb-call">📞 Call</a>
+  <a href="#enquire" class="mb-book">✉️ Enquire</a>
+</div>
+
 <!-- FOOTER -->
 <footer>
-  <div class="footer-left">Prof. Babu <span>Kunadian</span> — Consultant Cardiologist<br>
+  <div class="footer-left">Dr Babu <span>Kunadian</span> — Consultant Cardiologist<br>
     <small style="color:rgba(255,255,255,0.35);font-family:'DM Sans',sans-serif;font-size:0.75rem;">MBBS, MD, FRCP (London), MA Clin Ed · GMC: 5205826</small>
   </div>
   <div class="footer-right">
-    © 2025 Professor Babu Kunadian · Nuffield Health Grosvenor Hospital, Chester<br>
-    drbabukunadian.co.uk
+    © 2026 Dr Babu Kunadian · Nuffield Health Grosvenor Hospital, Chester<br>
+    drbabukunadian.co.uk<br>
+    <span class="footer-privacy">Enquiries and reviews sent through this website go only to Dr Kunadian's secretary and are used solely to respond to you.</span>
   </div>
 </footer>
 
+
+<script>
+(function () {
+  // Mobile menu
+  var btn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu');
+  if (btn && menu) {
+    btn.addEventListener('click', function () {
+      var open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+      btn.textContent = open ? '✕' : '☰';
+    });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        menu.classList.remove('open'); btn.setAttribute('aria-expanded', false); btn.textContent = '☰';
+      });
+    });
+  }
+
+  // Floating book button after the hero
+  var fb = document.getElementById('floatBook');
+  window.addEventListener('scroll', function () {
+    if (fb) fb.classList.toggle('show', window.scrollY > window.innerHeight * 0.8);
+  }, { passive: true });
+
+  // Scroll reveal
+  var els = document.querySelectorAll('.reveal, .condition-card, .credential-card, .location-card, .treatment-item, .highlight-card, .academic-role');
+  if ('IntersectionObserver' in window) {
+    els.forEach(function (el) { el.classList.add('reveal'); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
+  } else {
+    els.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  // Forms: return to this page with a thank-you message
+  var here = location.href.split('#')[0].split('?')[0];
+  document.querySelectorAll('.form-next').forEach(function (i) {
+    var form = i.closest('form');
+    i.value = here + '?sent=' + (form.id === 'reviewForm' ? 'review#reviews' : 'enquiry#enquire');
+  });
+  var sent = new URLSearchParams(location.search).get('sent');
+  if (sent === 'enquiry') { document.getElementById('enquiryForm').hidden = true; document.getElementById('enquirySent').hidden = false; }
+  if (sent === 'review') { document.getElementById('reviewSent').hidden = false; }
+
+  // Review form toggle
+  var rb = document.getElementById('openReview'), rf = document.getElementById('reviewForm');
+  if (rb && rf) rb.addEventListener('click', function () {
+    rf.hidden = !rf.hidden;
+    if (!rf.hidden) rf.querySelector('input[name="Name"]').focus();
+  });
+
+  // Reviews: loaded from reviews.json (Michele edits this file on GitHub)
+  function esc(t) { var d = document.createElement('div'); d.textContent = String(t || ''); return d.innerHTML; }
+  fetch('reviews.json', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .then(function (list) {
+      list = (list || []).filter(function (r) { return r && r.text; });
+      if (!list.length) return;
+      var grid = document.getElementById('reviewsGrid');
+      grid.innerHTML = '';
+      list.forEach(function (r) {
+        var n = Math.max(1, Math.min(5, parseInt(r.rating, 10) || 5));
+        var card = document.createElement('figure');
+        card.className = 'review-card';
+        card.innerHTML =
+          '<div class="review-stars" aria-label="' + n + ' out of 5 stars">' + '★★★★★'.slice(0, n) + '<span>' + '★★★★★'.slice(n) + '</span></div>' +
+          '<blockquote>“' + esc(r.text) + '”</blockquote>' +
+          '<figcaption><strong>' + esc(r.name || 'Patient') + '</strong>' +
+          (r.source ? ' · ' + esc(r.source) : '') + (r.date ? ' · ' + esc(r.date) : '') + '</figcaption>';
+        grid.appendChild(card);
+      });
+    })
+    .catch(function () {});
+})();
+</script>
 </body>
 </html>
