@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://drbabukunadian.co.uk/sitemap.xml
+Sitemap: https://www.drbabukunadian.co.uk/sitemap.xml
