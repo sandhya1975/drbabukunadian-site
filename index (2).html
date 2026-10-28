@@ -1,0 +1,1548 @@
+<!-- v2.0 updated -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professor Babu Kunadian | Consultant Cardiologist | Chester & Liverpool</title>
+<meta name="description" content="Professor Babu Kunadian - Consultant General and Interventional Cardiologist serving Chester, Liverpool and Merseyside. Nuffield Health Grosvenor Hospital, Chester. Published in The Lancet and BMJ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a1628;
+    --deep-blue: #0d2444;
+    --mid-blue: #1a3a6b;
+    --accent: #c8a96e;
+    --accent-light: #e8d5a8;
+    --white: #ffffff;
+    --off-white: #f8f6f2;
+    --light-grey: #f0ede8;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --nhs-blue: #005eb8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-dark);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: rgba(10, 22, 40, 0.97);
+    backdrop-filter: blur(10px);
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid rgba(200, 169, 110, 0.2);
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-logo span { color: var(--accent); }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+
+  .nav-cta {
+    background: var(--accent);
+    color: var(--navy) !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2px;
+    font-weight: 500 !important;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 50%, var(--mid-blue) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 100px 8% 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(200,169,110,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  }
+
+  /* ECG line animation */
+  .ecg-container {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    opacity: 0.15;
+    overflow: hidden;
+  }
+
+  .ecg-line {
+    width: 200%;
+    animation: ecgScroll 8s linear infinite;
+  }
+
+  @keyframes ecgScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(200,169,110,0.15);
+    border: 1px solid rgba(200,169,110,0.3);
+    color: var(--accent-light);
+    padding: 0.4rem 1rem;
+    border-radius: 2px;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3.8rem;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+
+  .hero h1 strong {
+    display: block;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .hero-title {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-quals {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: var(--accent);
+    font-weight: 600;
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--navy);
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: var(--accent-light);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.3);
+    color: var(--white);
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .hero-image {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: fadeInRight 1s ease 0.3s both;
+  }
+
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .hero-photo-frame {
+    position: relative;
+    width: 380px;
+    height: 480px;
+  }
+
+  .hero-photo-frame::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(200,169,110,0.3);
+    border-radius: 4px;
+  }
+
+  .hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    filter: brightness(0.95);
+  }
+
+  .hero-photo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--mid-blue) 0%, var(--navy) 100%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.3);
+    font-size: 5rem;
+  }
+
+  .hero-credentials {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: var(--accent);
+    color: var(--navy);
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    max-width: 200px;
+  }
+
+  /* TRUST BAR */
+  .trust-bar {
+    background: var(--off-white);
+    padding: 1.2rem 8%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border-bottom: 1px solid var(--light-grey);
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--text-mid);
+    font-weight: 500;
+  }
+
+  .trust-item svg {
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  /* SECTIONS */
+  section { padding: 80px 8%; }
+
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+    color: var(--navy);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-divider {
+    width: 50px;
+    height: 2px;
+    background: var(--accent);
+    margin-bottom: 2rem;
+  }
+
+  /* ABOUT */
+  .about {
+    background: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  .about-text p {
+    color: var(--text-mid);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    font-size: 0.97rem;
+  }
+
+  .about-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .highlight-card {
+    background: var(--off-white);
+    padding: 1.2rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent);
+  }
+
+  .highlight-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+  }
+
+  .highlight-card p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+
+  /* CREDENTIALS */
+  .credentials-section {
+    background: var(--navy);
+    padding: 80px 8%;
+  }
+
+  .credentials-section .section-title { color: var(--white); }
+
+  .credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .credential-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,169,110,0.2);
+    padding: 1.8rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  .credential-card:hover {
+    background: rgba(200,169,110,0.08);
+    border-color: rgba(200,169,110,0.4);
+    transform: translateY(-3px);
+  }
+
+  .credential-icon {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .credential-card h3 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .credential-card p {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+  }
+
+  /* CONDITIONS */
+  .conditions-section { background: var(--off-white); }
+
+  .conditions-intro {
+    max-width: 600px;
+    margin-bottom: 3rem;
+  }
+
+  .conditions-intro p {
+    color: var(--text-mid);
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+
+  .conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .condition-card {
+    background: var(--white);
+    padding: 1.8rem;
+    border-radius: 4px;
+    border-top: 3px solid var(--accent);
+    transition: all 0.3s;
+  }
+
+  .condition-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  }
+
+  .condition-card h3 {
+    font-size: 1.15rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .condition-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .condition-card ul li {
+    font-size: 0.82rem;
+    color: var(--text-mid);
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--light-grey);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .condition-card ul li::before {
+    content: '→';
+    color: var(--accent);
+    font-size: 0.75rem;
+  }
+
+  /* TREATMENTS */
+  .treatments-section { background: var(--white); }
+
+  .treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .treatment-item {
+    background: var(--off-white);
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+  }
+
+  .treatment-item:hover {
+    border-color: var(--accent);
+    background: white;
+  }
+
+  .treatment-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+
+  .treatment-item h4 {
+    font-size: 0.9rem;
+    color: var(--navy);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  /* RESEARCH */
+  .research-section {
+    background: linear-gradient(135deg, var(--deep-blue) 0%, var(--navy) 100%);
+    padding: 80px 8%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .research-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(200,169,110,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .research-section .section-title { color: var(--white); }
+
+  .research-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+    align-items: start;
+  }
+
+  .research-main p {
+    color: rgba(255,255,255,0.7);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .research-impact {
+    background: rgba(200,169,110,0.1);
+    border: 1px solid rgba(200,169,110,0.25);
+    padding: 1.8rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+  }
+
+  .research-impact h4 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .research-impact p {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .research-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .research-stat-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,169,110,0.2);
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .research-stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: var(--accent);
+    font-weight: 600;
+    display: block;
+  }
+
+  .research-stat-label {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .publications-badge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .pub-badge {
+    background: rgba(200,169,110,0.15);
+    border: 1px solid rgba(200,169,110,0.3);
+    color: var(--accent-light);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2px;
+    font-size: 0.78rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
+
+  /* ACADEMIC */
+  .academic-section { background: var(--off-white); }
+
+  .academic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+
+  .academic-role {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 4px;
+    border-left: 4px solid var(--accent);
+    margin-bottom: 1.5rem;
+  }
+
+  .academic-role h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+  }
+
+  .academic-role .org {
+    font-size: 0.82rem;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .academic-role p {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+
+  .memberships-list {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 4px;
+  }
+
+  .memberships-list h3 {
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+  }
+
+  .membership-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--light-grey);
+    font-size: 0.87rem;
+    color: var(--text-mid);
+  }
+
+  .membership-item::before {
+    content: '✦';
+    color: var(--accent);
+    font-size: 0.6rem;
+    flex-shrink: 0;
+  }
+
+  /* INSURANCE */
+  .insurance-section { background: var(--white); }
+
+  .insurance-intro {
+    max-width: 600px;
+    margin-bottom: 3rem;
+  }
+
+  .insurance-intro p {
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+
+  .insurance-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .insurer-card {
+    background: var(--off-white);
+    padding: 1.2rem;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--navy);
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+  }
+
+  .insurer-card:hover {
+    border-color: var(--accent);
+    background: var(--white);
+  }
+
+  .self-pay-note {
+    background: var(--off-white);
+    border-left: 4px solid var(--accent);
+    padding: 1.2rem 1.5rem;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.87rem;
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+
+  /* LOCATIONS */
+  .locations-section { background: var(--light-grey); }
+
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .location-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  .location-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  }
+
+  .location-tag {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--accent);
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+  }
+
+  .location-card h3 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .location-card p {
+    font-size: 0.83rem;
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .location-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    color: var(--text-light);
+    margin-bottom: 0.4rem;
+  }
+
+  /* BOOKING */
+  .booking-section {
+    background: var(--navy);
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .booking-content .section-title { color: var(--white); }
+
+  .booking-content p {
+    color: rgba(255,255,255,0.7);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .booking-details {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,169,110,0.25);
+    padding: 2.5rem;
+    border-radius: 4px;
+  }
+
+  .booking-detail-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .booking-detail-item:last-child { border-bottom: none; }
+
+  .booking-detail-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+
+  .booking-detail-value {
+    font-size: 0.95rem;
+    color: var(--white);
+    font-weight: 400;
+  }
+
+  .booking-detail-value a {
+    color: var(--accent-light);
+    text-decoration: none;
+  }
+
+  .booking-note {
+    background: rgba(200,169,110,0.1);
+    border: 1px solid rgba(200,169,110,0.2);
+    padding: 1rem 1.2rem;
+    border-radius: 3px;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.6);
+    margin-top: 1.5rem;
+    line-height: 1.6;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #060f1a;
+    padding: 3rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid rgba(200,169,110,0.15);
+  }
+
+  .footer-left {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgba(255,255,255,0.8);
+    font-size: 1rem;
+  }
+
+  .footer-left span { color: var(--accent); }
+
+  .footer-right {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; padding-top: 120px; }
+    .hero-image { display: none; }
+    .about { grid-template-columns: 1fr; gap: 2rem; }
+    .conditions-grid { grid-template-columns: 1fr; }
+    .treatments-grid { grid-template-columns: repeat(2, 1fr); }
+    .credentials-grid { grid-template-columns: 1fr; }
+    .research-grid { grid-template-columns: 1fr; }
+    .academic-grid { grid-template-columns: 1fr; }
+    .insurance-grid { grid-template-columns: repeat(2, 1fr); }
+    .locations-grid { grid-template-columns: 1fr; }
+    .booking-section { grid-template-columns: 1fr; gap: 2rem; }
+    .nav-links { display: none; }
+    .hero h1 { font-size: 2.5rem; }
+    .hero-stats { gap: 1rem; }
+    .section-title { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Prof. Babu <span>Kunadian</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#conditions">Conditions</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#academic">Academic</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#book" class="nav-cta">Book Appointment</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      ✦ Bupa Platinum Consultant &nbsp;·&nbsp; FRCP London
+    </div>
+    <h1>Professor<strong>Babu Kunadian</strong></h1>
+    <p class="hero-title">Consultant General & Interventional Cardiologist</p>
+    <p class="hero-quals">MBBS, MD, FRCP (London), MA Clin Ed</p>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">29</span>
+        <span class="stat-label">Peer-Reviewed<br>Publications</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">13+</span>
+        <span class="stat-label">Years Clinical<br>Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">39</span>
+        <span class="stat-label">International<br>Abstracts</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">360+</span>
+        <span class="stat-label">Doctors<br>Mentored</span>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#book" class="btn-primary">Book a Consultation</a>
+      <a href="#about" class="btn-outline">Learn More</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-photo-frame">
+      <div class="hero-photo-placeholder">
+        👨‍⚕️
+        <p style="font-size:0.9rem;margin-top:1rem;text-align:center;padding:0 1rem;">Add professional photo here</p>
+      </div>
+      <div class="hero-credentials">
+        <strong>Published in</strong><br>
+        The Lancet · BMJ<br>
+        Heart · AHJ
+      </div>
+    </div>
+  </div>
+
+  <!-- ECG animation -->
+  <div class="ecg-container">
+    <svg class="ecg-line" viewBox="0 0 1200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="0,30 100,30 120,30 130,5 140,55 150,10 165,30 200,30 250,30 260,30 270,5 280,55 290,10 305,30 350,30 400,30 410,30 420,5 430,55 440,10 455,30 500,30 550,30 560,30 570,5 580,55 590,10 605,30 650,30 700,30 710,30 720,5 730,55 740,10 755,30 800,30 850,30 860,30 870,5 880,55 890,10 905,30 950,30 1000,30 1010,30 1020,5 1030,55 1040,10 1055,30 1100,30 1150,30 1160,30 1170,5 1180,55 1190,10 1200,30" stroke="white" stroke-width="1.5" fill="none"/>
+    </svg>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/></svg>
+    Nuffield Health Grosvenor Hospital, Chester
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/></svg>
+    Liverpool Heart & Chest Hospital
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/></svg>
+    Countess of Chester Hospital
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+    Year 2 Director — University of Liverpool
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    All Major Insurance Accepted
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-text">
+    <p class="section-label">About Professor Kunadian</p>
+    <h2 class="section-title">A cardiologist you can trust with your heart</h2>
+    <div class="section-divider"></div>
+    <p>I am an Academic Consultant General and Interventional Cardiologist with over 13 years of experience at the Countess of Chester Hospital and Liverpool Heart & Chest Hospital. I see private patients at Nuffield Health The Grosvenor Hospital, Chester — serving patients across Chester, Liverpool, Wirral and the wider Merseyside region.</p>
+    <p>My training spans the prestigious Mersey Cardiology Programme, an Interventional Cardiology Fellowship at the University of Alberta, Canada, and a research doctorate at Newcastle University. I hold an MA in Clinical Education from Edge Hill University and have completed the Oxford Executive Leadership Programme at the University of Oxford.</p>
+    <p>I am accredited in Cardiac CT by the British Society of Cardiac Computed Tomography, and I previously served as Clinical Director of Diagnostic and Clinical Services at the Countess of Chester Hospital, where I oversaw clinical operations across multiple specialties.</p>
+    <p>Alongside my clinical work, I serve as Year 2 Director of the MBChB Programme at the University of Liverpool School of Medicine, where I lead curriculum design, assessment and student wellbeing. I hold an Honorary Professorship at Chester Medical School, University of Chester.</p>
+  </div>
+
+  <div>
+    <div class="about-highlights">
+      <div class="highlight-card">
+        <h4>Oxford Leadership</h4>
+        <p>Oxford Executive Leadership Programme, University of Oxford</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Canada Fellowship</h4>
+        <p>Interventional Cardiology PCI Fellowship, University of Alberta, Edmonton</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Lancet & BMJ</h4>
+        <p>Research published in world's top medical journals across 29 peer-reviewed publications</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Clinical Director</h4>
+        <p>Director of Diagnostics & Clinical Services, Countess of Chester Hospital</p>
+      </div>
+      <div class="highlight-card">
+        <h4>FRCP London</h4>
+        <p>Fellow of the Royal College of Physicians, London</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Bupa Platinum</h4>
+        <p>Bupa Platinum Consultant — highest tier recognition</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="credentials-section" id="credentials">
+  <p class="section-label" style="color:var(--accent)">Qualifications & Training</p>
+  <h2 class="section-title">World-class training. Nationally recognised research.</h2>
+  <div class="section-divider"></div>
+
+  <div class="credentials-grid">
+    <div class="credential-card">
+      <div class="credential-icon">🎓</div>
+      <h3>Academic Positions</h3>
+      <p>Year 2 Director, MBChB Programme — University of Liverpool School of Medicine. Honorary Professor — Chester Medical School, University of Chester. Previous honorary roles at Newcastle University.</p>
+    </div>
+    <div class="credential-card">
+      <div class="credential-icon">🏥</div>
+      <h3>Clinical Leadership</h3>
+      <p>Previously Clinical Director of Diagnostic and Clinical Services — Countess of Chester Hospital. Responsible for clinical operations, national performance targets, quality governance, and budgetary control across multiple specialties.</p>
+    </div>
+    <div class="credential-card">
+      <div class="credential-icon">🌍</div>
+      <h3>International Training</h3>
+      <p>Interventional Cardiology PCI Fellowship — University of Alberta, Edmonton, Canada (2012–2013). Training at London Chest Hospital, Northern Deanery and Mersey Cardiology Programme.</p>
+    </div>
+    <div class="credential-card">
+      <div class="credential-icon">📚</div>
+      <h3>Academic Leadership</h3>
+      <p>Oxford Executive Leadership Programme — University of Oxford. 2-year Clinical Leadership Programme — Countess of Chester Hospitals. MA in Clinical Education — Edge Hill University.</p>
+    </div>
+    <div class="credential-card">
+      <div class="credential-icon">🔬</div>
+      <h3>Research Impact</h3>
+      <p>29 peer-reviewed journal publications (17 first author). 39 international abstract presentations (24 first author). Research model now used across the entire UK by the British Cardiac Interventional Society.</p>
+    </div>
+    <div class="credential-card">
+      <div class="credential-icon">⚕️</div>
+      <h3>Professional Recognition</h3>
+      <p>Fellow — Royal College of Physicians, London. Advisor — British Cardiac Interventional Society. Former Regional Specialty Advisor. NHS Northwest Leadership Academy Recognised Mentor.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS -->
+<section class="conditions-section" id="conditions">
+  <p class="section-label">Conditions Treated</p>
+  <h2 class="section-title">Specialist heart care for every cardiac concern</h2>
+  <div class="section-divider"></div>
+
+  <div class="conditions-intro">
+    <p>Whether you are experiencing symptoms for the first time, seeking a second opinion, or want preventive cardiac assessment — Professor Kunadian offers expert diagnosis and personalised management across the full range of heart conditions.</p>
+  </div>
+
+  <div class="conditions-grid">
+    <div class="condition-card">
+      <h3>Ischaemic Heart Disease</h3>
+      <ul>
+        <li>Chest pain</li>
+        <li>Breathlessness</li>
+        <li>Heart attack (myocardial infarction)</li>
+        <li>Angina</li>
+        <li>Heart failure</li>
+        <li>Atherosclerosis</li>
+        <li>High cholesterol</li>
+        <li>Hypertension</li>
+      </ul>
+    </div>
+    <div class="condition-card">
+      <h3>Heart Rhythm Disorders</h3>
+      <ul>
+        <li>Palpitations, irregular heartbeats, heart racing, missing a beat</li>
+        <li>Dizziness</li>
+        <li>Blackouts / Syncope</li>
+        <li>Fatigue and symptoms secondary to abnormal heart rhythms</li>
+        <li>No symptoms but a concerning heart rhythm diagnosis</li>
+        <li>Atrial Fibrillation, Stroke, Atrial flutter</li>
+        <li>Supra-Ventricular Tachycardia (SVT)</li>
+        <li>Wolff Parkinson White syndrome</li>
+        <li>Ventricular Ectopy and Ventricular Tachycardia</li>
+        <li>Bradycardia and Heart block</li>
+      </ul>
+    </div>
+    <div class="condition-card">
+      <h3>Valvular & Structural Heart Disease</h3>
+      <ul>
+        <li>Heart Valve Disease — Aortic and Mitral valve disease</li>
+        <li>Cardiomyopathy</li>
+        <li>Cardiac screening</li>
+        <li>Family history of heart disease</li>
+        <li>Preventive cardiology</li>
+      </ul>
+    </div>
+    <div class="condition-card">
+      <h3>General Adult Cardiology</h3>
+      <ul>
+        <li>General adult cardiology</li>
+        <li>Ischaemic heart disease</li>
+        <li>Heart valve disease</li>
+        <li>Coronary angioplasty and stenting</li>
+        <li>Coronary angiography</li>
+        <li>Stress Echocardiography</li>
+        <li>Coronary CT</li>
+        <li>Echocardiogram</li>
+        <li>Angiography</li>
+        <li>Artery Assessment</li>
+        <li>Transthoracic echocardiogram (TTE)</li>
+        <li>Ambulatory blood pressure monitoring (ABPM)</li>
+      </ul>
+    </div>
+    <div class="condition-card">
+      <h3>Stroke & Prevention</h3>
+      <ul>
+        <li>AF-related stroke risk</li>
+        <li>Stroke prevention</li>
+        <li>Cardiovascular risk assessment</li>
+        <li>Preventive cardiology</li>
+        <li>Second opinion consultations</li>
+      </ul>
+    </div>
+    <div class="condition-card">
+      <h3>Complex & Interventional</h3>
+      <ul>
+        <li>Complex coronary artery disease</li>
+        <li>Primary PCI for heart attack</li>
+        <li>Rescue angioplasty</li>
+        <li>Operator outcomes & quality assurance</li>
+        <li>Post-procedure follow-up</li>
+        <li>Medication review & optimisation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section class="treatments-section" id="treatments">
+  <p class="section-label">Diagnostic Tests & Procedures</p>
+  <h2 class="section-title">Advanced cardiac diagnostics — all available privately</h2>
+  <div class="section-divider"></div>
+
+  <div class="treatments-grid">
+    <div class="treatment-item">
+      <div class="treatment-icon">🫀</div>
+      <h4>Coronary Angioplasty & Stenting</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">🔬</div>
+      <h4>Coronary Angiography</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">🖥️</div>
+      <h4>Coronary CT (CT Coronary Angiogram)</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">📡</div>
+      <h4>Echocardiogram (Echo)</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">🏃</div>
+      <h4>Stress Echocardiography</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">📈</div>
+      <h4>Electrocardiogram (ECG)</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">🩺</div>
+      <h4>Transthoracic Echocardiogram (TTE)</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">💉</div>
+      <h4>Ambulatory Blood Pressure Monitoring (ABPM)</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">🩸</div>
+      <h4>Angiography</h4>
+    </div>
+    <div class="treatment-item">
+      <div class="treatment-icon">🫁</div>
+      <h4>Artery Assessment</h4>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="research-section" id="research">
+  <p class="section-label" style="color:var(--accent)">Research & Publications</p>
+  <h2 class="section-title">Research & Publications</h2>
+  <div class="section-divider"></div>
+
+  <div class="research-grid">
+    <div class="research-main">
+      <p>Professor Kunadian's research career began in acute myocardial infarction (heart attack), culminating in an academic MD Degree from Newcastle University (2004–2007). His thesis at James Cook University Hospital evaluated the reorganisation of myocardial infarction service delivery — specifically the transition from thrombolysis-based care to a primary PCI service, including the final analysis of the landmark MERLIN randomised trial.</p>
+
+      <p>His scholarly output includes 29 peer-reviewed journal publications (17 as first author), 18 original articles, 5 reviews, 3 case reports, and a book chapter on adjunctive PCI technology in the second edition of <em>Essential Interventional Cardiology</em>. He contributed to the EACTS clinical guideline on antiplatelet and anticoagulation management in cardiac surgery (European Journal of Cardiothoracic Surgery, 2008). He has reviewed over 60 manuscripts since 2007 for leading journals including Heart, Annals of Internal Medicine and European Journal of Cardiothoracic Surgery.</p>
+
+      <div class="publications-badge">
+        <span class="pub-badge">The Lancet</span>
+        <span class="pub-badge">BMJ</span>
+        <span class="pub-badge">American Heart Journal</span>
+        <span class="pub-badge">Catheterization & Cardiovascular Interventions</span>
+        <span class="pub-badge">Heart (British Cardiac Society)</span>
+        <span class="pub-badge">International Journal of Cardiology</span>
+        <span class="pub-badge">European Heart Journal</span>
+        <span class="pub-badge">EACTS Guidelines</span>
+      </div>
+
+      <div class="research-impact" style="margin-top:2rem">
+        <h4>🏆 National Impact — A UK-Wide Standard</h4>
+        <p>Professor Kunadian's research group was the first in the UK to publish individual PCI (Percutaneous Coronary Intervention) operator outcomes — a groundbreaking paper published in the BMJ (2008). Using cumulative funnel plots and statistical process control, this methodology has since been adopted across the entire UK by the British Cardiac Interventional Society (BCIS) for reporting individual cardiologist and hospital outcomes. His model is now a national standard used to assess performance across the NHS. He was also an invited expert presenter at the Transcatheter Cardiovascular Therapeutics (TCT) Conference, Washington DC, USA (2007).</p>
+      </div>
+
+      <div class="research-impact" style="margin-top:1rem">
+        <h4>📊 Selected Key Publications — Professor Babu Kunadian</h4>
+        <p><strong>Lancet (2014):</strong> HEAT-PPCI Trial — Unfractionated heparin versus bivalirudin in primary PCI (529 citations)<br>
+        <strong>BMJ (2008):</strong> Cumulative funnel plots for early detection of inter-operator variation in PCI — first UK publication of individual operator outcomes<br>
+        <strong>Heart (2010):</strong> Impact of evidence-based strategies to reduce door-to-balloon time in STEMI using statistical process control<br>
+        <strong>American Heart Journal (2007):</strong> Final analysis of the MERLIN randomised trial — early invasive versus conservative treatment after failed fibrinolysis<br>
+        <strong>Annals of Thoracic Surgery (2007):</strong> Meta-analysis of valve haemodynamics — stentless versus stented aortic valves (106 citations)<br>
+        <strong>Catheterization & Cardiovascular Interventions (2007):</strong> Meta-analysis comparing anti-embolic devices with standard PCI in acute myocardial infarction<br>
+        <strong>Book Chapter:</strong> Adjunctive PCI technology — <em>Essential Interventional Cardiology</em>, 2nd edition<br>
+        <strong>EACTS Guideline (2008):</strong> Antiplatelet and anticoagulation management in cardiac surgery — European Journal of Cardiothoracic Surgery</p>
+      </div>
+
+      <div class="research-impact" style="margin-top:1rem">
+        <h4>🔬 Ongoing Research — Liverpool Heart & Chest Hospital</h4>
+        <p>Ongoing research at Liverpool Heart & Chest Hospital focuses on quality outcome analysis in PCI through regular formal evaluations and collaborative meetings. Current research interests include service reconfiguration in acute cardiac care, risk stratification and operator performance outcomes, and application of statistical process control in clinical pathways.</p>
+      </div>
+    </div>
+
+    <div class="research-stats">
+      <div class="research-stat-card">
+        <span class="research-stat-number">29</span>
+        <span class="research-stat-label">Peer-Reviewed Journal Publications</span>
+      </div>
+      <div class="research-stat-card">
+        <span class="research-stat-number">17</span>
+        <span class="research-stat-label">Publications as First Author</span>
+      </div>
+      <div class="research-stat-card">
+        <span class="research-stat-number">39</span>
+        <span class="research-stat-label">International Abstract Presentations</span>
+      </div>
+      <div class="research-stat-card">
+        <span class="research-stat-number">60+</span>
+        <span class="research-stat-label">Peer Review Manuscripts (since 2007)</span>
+      </div>
+      <div class="research-stat-card">
+        <span class="research-stat-number">529</span>
+        <span class="research-stat-label">Citations — HEAT-PPCI Lancet Trial</span>
+      </div>
+      <div class="research-stat-card">
+        <span class="research-stat-number">106</span>
+        <span class="research-stat-label">Citations — Aortic Valve Meta-Analysis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACADEMIC & TEACHING -->
+<section class="academic-section" id="academic">
+  <p class="section-label">Academic, Teaching & Leadership</p>
+  <h2 class="section-title">Educating the next generation of cardiologists</h2>
+  <div class="section-divider"></div>
+
+  <div class="academic-grid">
+    <div>
+      <div class="academic-role">
+        <h4>Year 2 Director, MBChB Programme</h4>
+        <p class="org">University of Liverpool — School of Medicine, Faculty of Health & Life Sciences</p>
+        <p>As Year 2 Director, Professor Kunadian leads undergraduate medical education combining extensive frontline clinical experience with innovative, student-centred teaching. He is responsible for curriculum design, assessment frameworks, simulation-based learning, and student wellbeing across the entire Year 2 medical programme at one of the UK's leading Russell Group universities.</p>
+      </div>
+      <div class="academic-role">
+        <h4>Honorary Professor</h4>
+        <p class="org">Chester Medical School, University of Chester</p>
+        <p>Honorary academic position recognising sustained contribution to medical education, clinical research and professional leadership. Previously held honorary roles at Newcastle University and the University of Liverpool.</p>
+      </div>
+      <div class="academic-role">
+        <h4>Teaching Philosophy & Approach</h4>
+        <p class="org">Medical Education — Career-Long Commitment</p>
+        <p>Professor Kunadian has designed, led and delivered teaching for medical students, junior doctors and allied health professionals across case-based, problem-based, tutorial and simulation-based learning modalities. He has acted as a PACES examiner for the MRCP examinations with the Royal College of Physicians. His teaching is informed by an MA in Clinical Education from Edge Hill University and specialist coaching and mentoring training through the NHS Northwest Leadership Academy.</p>
+      </div>
+      <div class="academic-role">
+        <h4>Postgraduate Training & Supervision</h4>
+        <p class="org">Cardiology Registrar Supervision — Mersey Region</p>
+        <p>He has taken lead roles in supervising, appraising and mentoring specialist cardiac registrars, overseeing training in cardiac catheterisation and PCI at both the Countess of Chester Hospital and Liverpool Heart & Chest Hospital. He has served as Deputy Programme Director for Cardiology in the Mersey region, Physician Education Supervisor and MSc-level lecturer. He regularly delivers invited talks and organises educational events at local, national and international levels.</p>
+      </div>
+      <div class="academic-role">
+        <h4>Clinical Director — Diagnostics & Clinical Services</h4>
+        <p class="org">Countess of Chester Hospital NHS Foundation Trust (Previous Role)</p>
+        <p>Previously oversaw clinical operations across diagnostic and clinical services. Responsible for achieving national performance targets, quality governance compliance, budgetary control and multidisciplinary team leadership. Contributed to aftercare reviews, root cause analyses, medico-legal reporting, and inpatient safety strategies.</p>
+      </div>
+      <div class="academic-role">
+        <h4>Appraisal & Revalidation Lead</h4>
+        <p class="org">Countess of Chester Hospital — 7 Years (2017–2024)</p>
+        <p>Led appraisal and revalidation for over 300 doctors across the Trust, ensuring robust professional development and fitness to practise. Recognised mentor with the NHS Northwest Leadership Academy, bringing a compassionate and empowering approach to supporting colleagues and students facing challenging circumstances.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="memberships-list">
+        <h3>Professional Memberships</h3>
+        <div class="membership-item">Fellow — Royal College of Physicians, London (FRCP)</div>
+        <div class="membership-item">Fellow — Royal College of Physicians & Surgeons, Glasgow</div>
+        <div class="membership-item">British Cardiovascular Society</div>
+        <div class="membership-item">British Cardiovascular Intervention Society (BCIS) — National Adviser</div>
+        <div class="membership-item">European Association of Percutaneous Cardiovascular Interventions</div>
+        <div class="membership-item">British Society of Cardiac Computed Tomography (Accredited)</div>
+        <div class="membership-item">NHS Northwest Leadership Academy (Recognised Mentor)</div>
+        <div class="membership-item">PACES Examiner — Royal College of Physicians</div>
+      </div>
+
+      <div class="memberships-list" style="margin-top:1.5rem">
+        <h3>Education & Qualifications</h3>
+        <div class="membership-item">MBBS — Medical Degree</div>
+        <div class="membership-item">MD — Research Doctorate, Newcastle University</div>
+        <div class="membership-item">FRCP — Royal College of Physicians, London</div>
+        <div class="membership-item">MA Clinical Education — Edge Hill University</div>
+        <div class="membership-item">Oxford Executive Leadership Programme — University of Oxford</div>
+        <div class="membership-item">PCI Interventional Fellowship — University of Alberta, Canada (2012–2013)</div>
+        <div class="membership-item">MSc Evidence Based Framework (Statistics) — University of Teesside</div>
+        <div class="membership-item">2-Year Clinical Leadership Programme — Countess of Chester Hospitals</div>
+      </div>
+
+      <div class="memberships-list" style="margin-top:1.5rem">
+        <h3>International Presentations</h3>
+        <div class="membership-item">TCT — Transcatheter Cardiovascular Therapeutics, Washington DC (Invited Expert, 2007)</div>
+        <div class="membership-item">American Heart Association (AHA) Annual Scientific Sessions</div>
+        <div class="membership-item">American College of Cardiology (ACC)</div>
+        <div class="membership-item">European Society of Cardiology (ESC) Congress</div>
+        <div class="membership-item">British Cardiovascular Society (BCS) Annual Conference</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSURANCE -->
+<section class="insurance-section" id="insurance">
+  <p class="section-label">Private Medical Insurance</p>
+  <h2 class="section-title">All major insurers accepted</h2>
+  <div class="section-divider"></div>
+
+  <div class="insurance-intro">
+    <p>Professor Kunadian is a recognised consultant with all major UK private medical insurers. If you have private health insurance, your consultation and investigations may be covered. Please contact your insurer to confirm your benefit before your appointment.</p>
+  </div>
+
+  <div class="insurance-grid">
+    <div class="insurer-card">🏥 Aviva Health</div>
+    <div class="insurer-card">🏥 AXA Health</div>
+    <div class="insurer-card">🏥 AXA — Global Healthcare</div>
+    <div class="insurer-card">🏥 Bupa</div>
+    <div class="insurer-card">🏥 Bupa On Demand</div>
+    <div class="insurer-card">🏥 WPA</div>
+    <div class="insurer-card">🏥 Benenden Health</div>
+    <div class="insurer-card">🏥 Cigna</div>
+    <div class="insurer-card">🏥 The Exeter</div>
+    <div class="insurer-card">🏥 Simplyhealth</div>
+    <div class="insurer-card">🏥 Universal Provident</div>
+    <div class="insurer-card">🏥 Vitality Health (Pru Health)</div>
+    <div class="insurer-card">🏥 Westfield Health WPA</div>
+  </div>
+
+  <div class="self-pay-note">
+    <strong>Self-paying patients are welcome.</strong> If you do not have private medical insurance, you can pay for your consultation directly. Please contact his secretary at Nuffield Health Grosvenor Hospital, Chester, who can advise on current consultation fees and arrange your appointment.
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="locations-section" id="locations">
+  <p class="section-label">Clinic Locations</p>
+  <h2 class="section-title">Serving Chester, Liverpool & Merseyside</h2>
+  <div class="section-divider"></div>
+
+  <div class="locations-grid">
+    <div class="location-card">
+      <span class="location-tag">Private Consultations</span>
+      <h3>Nuffield Health The Grosvenor Hospital</h3>
+      <p>Chester's leading private hospital. Professor Kunadian sees private patients here every Wednesday afternoon.</p>
+      <div class="location-detail">📍 Wrexham Road, Chester, CH4 7QP</div>
+      <div class="location-detail">📞 01244 680 444</div>
+      <div class="location-detail">📅 Wednesdays 15:30 – 20:00</div>
+      <div class="location-detail">⭐ CQC Rated Good</div>
+    </div>
+    <div class="location-card">
+      <span class="location-tag">Interventional Cardiology</span>
+      <h3>Liverpool Heart & Chest Hospital</h3>
+      <p>One of the UK's largest and busiest specialist cardiac centres. Professor Kunadian performs complex interventional cardiac procedures here.</p>
+      <div class="location-detail">📍 Thomas Drive, Liverpool, L14 3PE</div>
+      <div class="location-detail">🫀 Interventional cardiology & complex procedures</div>
+      <div class="location-detail">🏥 Academic Consultant base</div>
+    </div>
+    <div class="location-card">
+      <span class="location-tag">NHS & Clinical Directorate</span>
+      <h3>Countess of Chester Hospital</h3>
+      <p>Professor Kunadian previously served as Clinical Director of Diagnostics and Clinical Services and led the appraisal and revalidation programme for over 360 doctors.</p>
+      <div class="location-detail">📍 Liverpool Road, Chester, CH2 1UL</div>
+      <div class="location-detail">👨‍💼 Previous Clinical Director — Diagnostics</div>
+      <div class="location-detail">🎓 NHS Northwest Leadership Mentor</div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking-section" id="book">
+  <div class="booking-content">
+    <p class="section-label" style="color:var(--accent)">Book a Consultation</p>
+    <h2 class="section-title">Take the first step towards expert cardiac care</h2>
+    <p>Whether you are experiencing concerning symptoms, seeking reassurance, or would like a comprehensive heart assessment — Professor Kunadian offers clear explanations, personalised management, and access to the latest cardiac diagnostics, all in a single appointment.</p>
+    <p>To book your private consultation, please contact his secretary directly at Nuffield Health The Grosvenor Hospital, Chester. A GP referral letter is required.</p>
+    <a href="tel:01244680444" class="btn-primary">Call Nuffield: 01244 680 444</a>
+  </div>
+
+  <div class="booking-details">
+    <div class="booking-detail-item">
+      <p class="booking-detail-label">Secretary Contact</p>
+      <p class="booking-detail-value">Michele White — Nuffield Health Chester</p>
+    </div>
+    <div class="booking-detail-item">
+      <p class="booking-detail-label">Hospital Phone</p>
+      <p class="booking-detail-value"><a href="tel:01244680444">01244 680 444</a></p>
+    </div>
+    <div class="booking-detail-item">
+      <p class="booking-detail-label">Secretary Direct</p>
+      <p class="booking-detail-value"><a href="tel:01244366301">01244 366301</a> / <a href="tel:01512543104">0151 254 3104</a></p>
+    </div>
+    <div class="booking-detail-item">
+      <p class="booking-detail-label">Consultation Days</p>
+      <p class="booking-detail-value">Wednesdays — 15:30 to 20:00</p>
+    </div>
+    <div class="booking-detail-item">
+      <p class="booking-detail-label">Location</p>
+      <p class="booking-detail-value">Nuffield Health The Grosvenor Hospital<br>Wrexham Road, Chester, CH4 7QP</p>
+    </div>
+    <div class="booking-detail-item">
+      <p class="booking-detail-label">Referral</p>
+      <p class="booking-detail-value">GP referral letter required</p>
+    </div>
+    <div class="booking-note">
+      All major private medical insurers accepted including Bupa, AXA, Aviva and Vitality. Self-paying patients also welcome. Please contact the secretary for current fee information.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">Prof. Babu <span>Kunadian</span> — Consultant Cardiologist<br>
+    <small style="color:rgba(255,255,255,0.35);font-family:'DM Sans',sans-serif;font-size:0.75rem;">MBBS, MD, FRCP (London), MA Clin Ed · GMC: 5205826</small>
+  </div>
+  <div class="footer-right">
+    © 2025 Professor Babu Kunadian · Nuffield Health Grosvenor Hospital, Chester<br>
+    drbabukunadian.co.uk
+  </div>
+</footer>
+
+</body>
+</html>
